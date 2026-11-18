@@ -156,5 +156,5 @@ and the summary-level inputs from which every figure and table was generated.
 ## 6. Licence and citation
 
 Released under the MIT licence (`LICENSE`). If you use this code, please cite the
-manuscript and the archived Zenodo release; the versioned DOI is assigned at
-publication and recorded in `CITATION.cff`.
+manuscript. A versioned archival DOI has not been assigned for this release; if one
+is added later it will be recorded in `CITATION.cff`.
