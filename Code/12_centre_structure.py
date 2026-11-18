@@ -133,7 +133,7 @@ _xt = ['Centre 1\n(2017-2022)', 'Centre 2\n(2017-2022)',
 axB.set_xticklabels(_xt, fontsize=7.2, ha='center')
 axB.set_ylim(0.45, 0.86)
 axB.set_ylabel('Univariable AUC of fibrinogen', fontsize=8.5)
-axB.set_title('Fibrinogen signal confined\nto a single centre-period cell',
+axB.set_title('Fibrinogen signal observed only\nin hospital 1, derivation period',
               fontsize=8.8, linespacing=1.35)
 for b, k in zip(bars, ks):
     axB.text(b.get_x()+b.get_width()/2, b.get_height()+0.008, f'{FIB_AUC[k]:.3f}',

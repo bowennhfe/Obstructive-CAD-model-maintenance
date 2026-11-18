@@ -56,7 +56,7 @@ WARN = dict(fc="#fdeaea", ec="#a24a4a")
 
 
 EN = dict(
-    head="Patients screened for eligibility at four hospitals, October 2017 to July 2026\n"
+    head="Consecutive inpatients meeting the same eligibility criteria at four hospitals, October 2017 to July 2026\n"
          "(inpatients with suspected coronary artery disease referred for CCTA)",
     dev="Derivation cohort\nCentres 1 and 2, Oct 2017 - Dec 2022\n"
         "n = 442, 208 obstructive (47.1%)",
@@ -83,7 +83,7 @@ EN = dict(
     step3="3  Temporal\n  accumulation\n- 7 increments of the\n  364 contemporary\n  patients\n"
           "- re-tuning at every step\n- resampling control matched\n  on rows (370 distinct\n"
           "  patients behind 806 rows)\n- no historical-period\n  control was available",
-    step4="4  Reporting and\n  inference\n- TRIPOD+AI;\n  PROBAST+AI item by item\n  (Table S46)\n"
+    step4="4  Reporting and\n  inference\n- TRIPOD+AI;\n  PROBAST+AI item by item\n  (Table S30)\n"
           "- one fully external\n  cohort, 63 events\n- exploratory; underpowered\n  for the primary endpoint",
     scope="Scope of every result. All patients had already been referred for and had undergone CCTA, so the performance\n"
           "reported here describes the model inside the referred population and does not address the decision it was\n"
@@ -109,7 +109,7 @@ ZH = dict(
           "- 交叉拟合再校准\n- 净获益为假设性分析",
     step3="3  时间累积\n- 364 例当代患者\n  分 7 档并入\n- 每一步重新调参\n"
           "- 重抽样对照臂仅匹配\n  行数（806 行对应\n  370 名患者）\n- 无法获得历史时段对照",
-    step4="4  报告与推断\n- TRIPOD+AI；\n  PROBAST+AI 逐条评价\n  （表 S46）\n"
+    step4="4  报告与推断\n- TRIPOD+AI；\n  PROBAST+AI 逐条评价\n  （表 S30）\n"
           "- 仅一个完整外部队列，\n  63 个事件\n- 探索性；对主终点\n  把握度不足",
     scope="全部结果的适用范围。所有患者均已转诊并完成 CCTA，故本文报告的是模型在已转诊人群内的表现，\n"
           "不涉及它本应辅助的决策。结局为临床报告中记录的 CAD-RADS 分级（3-5 对 0-2），\n"

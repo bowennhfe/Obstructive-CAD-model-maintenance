@@ -11,8 +11,9 @@ manuscript and in the supplementary material. No patient-level data are included
 (see *Data required* and *Data availability* below); the aggregated tables from
 which the manuscript's numerical statements are taken are in `Derived_tables/`.
 `Derived_tables/TABLE_INDEX.csv` maps every table file to its display number in the
-manuscript's supplementary material (R21: the supplement reproduces the 40 tables that
-the text cites; the remaining process/provenance tables stay in this repository only).
+manuscript's supplementary material (the supplement reproduces the 39 numbered tables that
+the text cites, plus the companion Table S13b; the remaining process/provenance
+tables stay in this repository only).
 
 ---
 
@@ -155,5 +156,5 @@ and the summary-level inputs from which every figure and table was generated.
 ## 6. Licence and citation
 
 Released under the MIT licence (`LICENSE`). If you use this code, please cite the
-manuscript and the archived release; the DOI is recorded in `ZENODO.md` and in
-`CITATION.cff`.
+manuscript and the archived Zenodo release; the versioned DOI is assigned at
+publication and recorded in `CITATION.cff`.
