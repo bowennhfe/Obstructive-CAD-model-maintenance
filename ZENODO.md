@@ -43,10 +43,10 @@ part of the release (see the checklist in section 4).
 
 | Where | What to put |
 |---|---|
-| Manuscript, Declarations → *Code availability* | `https://github.com/<account>/<repo>` and `https://doi.org/10.5281/zenodo.xxxxxxx` |
-| `CITATION.cff`, fields `repository-code` and `doi` | the same two strings |
+| Manuscript, Declarations → *Code availability* | DONE — repository URL filled in on 2026-11-18: `https://github.com/bowennhfe/Obstructive-CAD-model-maintenance`. Remaining: the Zenodo DOI. |
+| `CITATION.cff`, field `repository-code` | DONE — set to the URL above. Remaining: `doi` (currently `10.5281/zenodo.xxxxxxx`). |
 | Cover letter | the cover letter no longer carries an open-items section; check that the repository sentence matches the URL above once filled |
-| TRIPOD+AI checklist, item 18f | the same two strings |
+| TRIPOD+AI checklist, item 18f | the Zenodo DOI |
 
 After the DOI exists, replace every occurrence of
 `[Repository URL and DOI to be inserted by the authors.]` in the manuscript with the
