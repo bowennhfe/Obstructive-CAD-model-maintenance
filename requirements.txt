@@ -1,0 +1,21 @@
+# Python packages used to produce the published results.
+# Python 3.13.14 on Windows; install with:  pip install -r requirements.txt
+#
+# Versions are pinned because several results depend on scikit-learn's
+# cross-validation and random-forest defaults.
+
+numpy==2.5.5
+pandas==3.1.1
+scikit-learn==1.9.1
+scipy==1.18.1
+matplotlib==3.11.2
+statsmodels==0.15.0
+openpyxl==3.1.5
+
+# Optional. Only 01_derivation_model.py and 08_roc_shap_original.py import shap,
+# for the SHAP values of the frozen model. The published results used 0.52.0;
+# the ranking and the mean absolute SHAP values in Supplementary Table S47 are
+# stable across 0.4x-0.5x, but pin the version for exact reproduction.
+shap==0.52.0
+
+# The two R scripts need R >= 4.4 with pmsampsize, rms and ggplot2.

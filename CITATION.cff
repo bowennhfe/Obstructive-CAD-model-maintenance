@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript and this archived release."
+title: "Analysis code for: Calibration and discrimination drift of a diagnostic model for obstructive coronary artery disease on CT angiography"
+type: software
+authors:
+  - family-names: Li
+    given-names: Bowen
+    orcid: "https://orcid.org/0009-0007-8430-0690"
+  - family-names: Dai
+    given-names: Yueli
+    orcid: "https://orcid.org/0009-0000-7690-4581"
+repository-code: "https://github.com/<account>/<repo>"
+doi: "10.5281/zenodo.xxxxxxx"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-18"
+keywords:
+  - clinical prediction model
+  - external validation
+  - calibration
+  - model updating
+  - coronary CT angiography
+  - CAD-RADS
+abstract: >-
+  Analysis code for an exploratory four-hospital external validation and updating
+  study of a random-forest model for obstructive coronary artery disease
+  (CAD-RADS 3-5 versus 0-2) in patients already referred for coronary CT
+  angiography. Includes model development with repeated cross-validation, frozen
+  external validation pooled and by hospital, cross-fitted logistic recalibration,
+  a temporal accumulation ladder with a row-matched control arm, and the
+  centre-structure and precision analyses. No patient-level data are included.

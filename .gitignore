@@ -1,0 +1,26 @@
+# Data — never commit (patient-level clinical records)
+data/
+*.xlsx
+*.xls
+*.csv
+!requirements.txt
+
+# Model objects fitted on patient data
+Models/
+*.pkl
+*.joblib
+# ...except the frozen primary model, which is part of the release
+!Models/m01_rf_original.pkl
+!Models/m01_spec.json
+
+# Generated output
+Figures/
+Tables/
+Outputs/
+Logs/
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
