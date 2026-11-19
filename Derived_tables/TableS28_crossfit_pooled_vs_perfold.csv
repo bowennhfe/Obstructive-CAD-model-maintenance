@@ -1,0 +1,3 @@
+﻿Recalibration,n evaluated per unit,pooled O:E distance from 1,pooled intercept distance from 0,pooled slope,pooled AUC,per-fold mean O:E distance from 1,per-fold mean intercept distance from 0,per-fold mean slope,per-fold mean |slope - 1|,per-fold SD of O:E distance from 1,per-fold SD of intercept distance from 0,per-fold AUC median,per-fold AUC 2.5th,per-fold AUC 97.5th
+intercept-only,177 (pooled across folds) / 35 (per fold),0.0006,0.001,0.873,0.717,0.0809,0.1479,0.974,0.349,0.0631,0.1113,0.721,0.562,0.864
+slope+intercept,177 (pooled across folds) / 35 (per fold),0.0011,0.002,0.934,0.711,0.0747,0.1336,1.161,0.492,0.0578,0.102,0.721,0.562,0.864

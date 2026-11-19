@@ -1,0 +1,10 @@
+﻿Analysis,Quantity,Estimate,95% CI
+Cross-validated separability,Centre 1 vs Centre 2,0.912,0.881-0.939
+Cross-validated separability,Centre 1 vs Temporal,0.779,0.743-0.814
+Cross-validated separability,Centre 1 vs Geographical,0.733,0.686-0.781
+Cross-validated separability,Centre 2 vs Temporal,0.885,0.853-0.914
+Cross-validated separability,Centre 2 vs Geographical,0.916,0.884-0.945
+Cross-validated separability,Temporal vs Geographical,0.746,0.702-0.790
+Centre assignment,Records (of 442) assigned to the same source with and without the outcome in the matching key,442 / 442,n/a
+Centre assignment,"Centre 1 / centre 2 / unassigned counts, outcome-free key",255 / 182 / 5,n/a
+Centre assignment,Records whose 19-variable fingerprint matched both source registries (ambiguous),0,n/a

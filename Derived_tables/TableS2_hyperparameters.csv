@@ -1,0 +1,2 @@
+﻿model,cv_auc_tuned,params
+RF,0.8433492926155969,"{""max_depth"": 10, ""min_samples_leaf"": 1, ""n_estimators"": 500}"

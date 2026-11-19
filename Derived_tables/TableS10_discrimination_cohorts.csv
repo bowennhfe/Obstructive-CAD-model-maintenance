@@ -1,0 +1,5 @@
+﻿cohort,n,events,n_derive,auc,ci_lo,ci_hi,role
+"Derivation cohort (n = 442), 10-fold CV",442,208,442,0.8311349441157133,0.7921065103468887,0.8664074548309062,internal cross-validation
+Geographical cohort (n = 177) - model developed on the original cohort,177,63,442,0.718741297688666,0.6432571667505478,0.7918990384615384,"external, frozen model"
+Geographical cohort (n = 177) - model developed after data accumulation,177,63,806,0.7375382901698692,0.6594259874767,0.8081449515110103,"external, updated model"
+Geographical cohort (n = 177) - row-count-matched control arm,177,63,806,0.7034252297410192,0.6252010046569237,0.7785306028328468,"external, row-count-matched control"

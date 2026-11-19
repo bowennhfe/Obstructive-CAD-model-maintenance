@@ -1,0 +1,2 @@
+﻿Model,Full name,AUC (50 folds),AUC 2.5-97.5 pct,AUC (pooled OOF),Sensitivity,Specificity,PPV,NPV,Accuracy,Brier,Calibration slope,Calibration intercept,ICI,O:E,Youden threshold
+RF,Random forest,0.832 (0.055),0.714-0.913,0.829,0.702,0.833,0.789,0.759,0.771,0.171,1.435,0.038,0.085,1.016,0.531

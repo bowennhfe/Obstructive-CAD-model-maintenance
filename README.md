@@ -11,7 +11,7 @@ manuscript and in the supplementary material. No patient-level data are included
 (see *Data required* and *Data availability* below); the aggregated tables from
 which the manuscript's numerical statements are taken are in `Derived_tables/`.
 `Derived_tables/TABLE_INDEX.csv` maps every table file to its display number in the
-manuscript's supplementary material: 15 supplementary tables (S1 to S15), whose 40 panels
+manuscript's supplementary material: 15 supplementary tables (S1 to S15), whose 41 panels
 reproduce every numbered block that the text cites, with the panel letter in the third
 column. The remaining process/provenance tables stay in this repository only.
 
@@ -125,7 +125,7 @@ so in their docstrings.
 | Temporal accumulation ladder | 7 increments (0, 10, 20, 40, 60, 80, 100%), 10 repeated stratified draws, seed `SEED + repeat` |
 | Bootstrap intervals | 2000 resamples, patient level |
 | Recalibration | 5-fold cross-fitting over 100 repeated stratified partitions, so no patient is used to fit and to evaluate the correction and no estimate rests on one split |
-| Hyperparameters | chosen by grid search inside the cross-validation; the grids are in `common.PARAM_GRIDS` and are reproduced in Supplementary Table S2 |
+| Hyperparameters | chosen by grid search inside the cross-validation. The random forest grid is `common.PARAM_GRIDS['RF']`; the grids of all eight families, with the selected settings and the internal cross-validated AUC, are defined in `Code/14_algo_comparison.py` (`ALGOS`) and reproduced in Supplementary Table S2, panel E |
 
 Two consecutive runs on the same machine reproduce the reported values exactly.
 The Python version and package versions that produced the manuscript are pinned in

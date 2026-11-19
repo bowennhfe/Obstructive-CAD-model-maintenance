@@ -1,0 +1,15 @@
+﻿cohort,row,var,value,action
+original,33,cr,4360.0,set_missing
+original,56,cr,9800.0,set_missing
+original,156,cr,5200.0,set_missing
+original,158,cr,4.4,set_missing
+original,369,cr,1571.0,set_missing
+original,131,urea,448.0,set_missing
+original,156,urea,430.0,set_missing
+original,158,urea,55.0,set_missing
+original,204,urea,294.0,set_missing
+original,228,urea,370.0,set_missing
+temporal,51,tg,31.07,set_missing
+temporal,355,ldl,318.0,set_missing
+temporal,129,ua,75.0,set_missing
+geo,139,cr,16.9,set_missing

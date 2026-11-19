@@ -1,0 +1,7 @@
+﻿model,published_auc,rebuilt_auc_mean,rebuilt_auc_sd,difference,z,compatible_within_2se
+RF,0.832,0.8162,0.0294,-0.0158,-0.537,True
+SVM,0.772,0.8154,0.0298,0.0434,1.459,True
+NN,0.773,0.8166,0.0304,0.0436,1.435,True
+KNN,0.707,0.7311,0.0361,0.0241,0.669,True
+DTC,0.682,0.6552,0.0417,-0.0268,-0.641,True
+LDA,0.81,0.842,0.0289,0.032,1.107,True

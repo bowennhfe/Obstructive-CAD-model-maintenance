@@ -1,0 +1,7 @@
+﻿metric,p_mannwhitney
+AUC,0.0002
+slope,0.0002
+intercept,0.0002
+Brier,0.0002
+ICI,0.0002
+O:E,0.0002

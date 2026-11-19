@@ -91,8 +91,14 @@ TRANSPORT = [('Hospital 1 → Hospital 2', 0.728, 'cross-centre'),
 REF_INTERNAL = 0.832
 
 exp = C.read_csv_out('s11_diversity_experiment_raw')
-CFG = ['Hospital 1 only', 'Hospital 2 only', 'Both hospitals (mixed)']
+# 数据键与显示标签必须分开：CSV 由 11_multicentre.py 写出，config 列沿用
+# 'Centre n only' 的历史取值；图中统一显示 'Hospital n only'（与正文一致）。
+# 二者混用会让三组同时筛空、panel D 变成空白图（R27 修）。
+CFG_DATA = ['Centre 1 only', 'Centre 2 only', 'Both centres (mixed)']
+CFG_LAB = ['Hospital 1 only', 'Hospital 2 only', 'Both hospitals (mixed)']
 CFG_C = ['#1f77b4', '#ff7f0e', '#9467bd']
+_missing = [c for c in CFG_DATA if c not in set(exp['config'].astype(str))]
+assert not _missing, f"config 取值与绘图键不一致，筛空风险：{_missing}"
 
 # ---------------------------------------------------------------- 绘图
 fig = plt.figure(figsize=(7.4, 7.0))
@@ -162,8 +168,9 @@ C.style_axes(axC, axis='x')
 axD = fig.add_subplot(gs[1, 1])
 n_show = 176
 sub = exp[exp.n_train == n_show]
-for i, (cfg, col) in enumerate(zip(CFG, CFG_C)):
+for i, (cfg, lab, col) in enumerate(zip(CFG_DATA, CFG_LAB, CFG_C)):
     v = sub[sub.config == cfg]['AUC'].values
+    assert len(v) > 0, f"panel D 组 '{cfg}' 在该样本量下为空"
     xj = np.random.default_rng(7).normal(i, 0.055, len(v))
     axD.scatter(xj, v, s=9, color=col, alpha=0.55, linewidths=0)
     axD.plot([i-0.22, i+0.22], [v.mean()]*2, color=col, lw=2.0)
@@ -174,9 +181,9 @@ _lo = min(sub['AUC'].min(), 0.60)
 _hi = max(sub['AUC'].max(), 0.74)
 _pad = 0.055 * (_hi - _lo)
 axD.set_ylim(_lo - _pad, _hi + 2.9 * _pad)
-axD.set_xticks(range(3))
-axD.set_xticklabels(['Hospital 1\nonly', 'Hospital 2\nonly', 'Both hospitals\n(mixed)'],
-                    fontsize=8)
+axD.set_xticks(range(len(CFG_LAB)))
+axD.set_xticklabels([l.replace(' only', '\nonly').replace(' (mixed)', '\n(mixed)')
+                     for l in CFG_LAB], fontsize=8)
 axD.set_ylabel('AUC on geographical cohort', fontsize=8.5)
 axD.set_title(f'Matched sample size\n(n={n_show} x {len(sub)//3} repeats)',
               fontsize=8.8, linespacing=1.35)
@@ -190,5 +197,6 @@ plt.close(fig)
 
 pd.DataFrame({'cohort': ks, 'fib_univariable_AUC': [FIB_AUC[k] for k in ks]}).to_csv(
     os.path.join(C.TABLE_DIR, 'TableS16_fib_by_cohort.csv'), index=False)
-SEP.round(3).to_csv(os.path.join(C.TABLE_DIR, 'TableS17_separability.csv'))
+SEP.round(3).to_csv(os.path.join(C.TABLE_DIR, 'TableS17_separability.csv'),
+                    index=True, index_label='Source')
 C.log('Fig11 + TableS16 + TableS17 已生成')

@@ -3,10 +3,16 @@ data/
 *.xlsx
 *.xls
 *.csv
+# ...except the aggregated tables that back every number in the manuscript.
+# These carry no patient-level rows (see README, "Data required").
+!Derived_tables/*.csv
 !requirements.txt
 
 # Model objects fitted on patient data
-Models/
+# NB: exclude the directory's contents, not the directory itself — a trailing
+# slash makes the negations below ineffective, and the frozen model is part of
+# the release (see README, "Data required").
+Models/*
 *.pkl
 *.joblib
 # ...except the frozen primary model, which is part of the release

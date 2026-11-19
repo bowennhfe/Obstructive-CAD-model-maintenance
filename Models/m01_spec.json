@@ -1,0 +1,10 @@
+{
+  "best_params": {
+    "RF": {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "n_estimators": 500
+    }
+  },
+  "threshold_rf_youden": 0.5312248360659158
+}

@@ -34,7 +34,7 @@ missing before analysis (14 cells in total across the three cohorts; Supplementa
 Table S1). Age is not truncated. Missing values are imputed with the median, inside
 the modelling pipeline, so that the imputation is fitted on training folds only and
 is carried frozen into the external cohorts. Missingness is at most 2.26% for any
-variable in any cohort (Supplementary Table S23).
+variable in any cohort (Supplementary Table S1).
 
 ## Binary variables (5)
 
@@ -65,7 +65,7 @@ reconstructed in `33_external_by_centre.py` (external cohort) and `11_multicentr
 the external cohort, by the record-identifier series of the two hospitals. The
 derivation cohort resolves to 255 and 182 patients with 5 unassignable; the external
 cohort to 56 and 121 patients. Repeating the match without the outcome term leaves
-every assignment unchanged (Supplementary Table S25).
+every assignment unchanged (Supplementary Table S11).
 
 ## What is not released
 

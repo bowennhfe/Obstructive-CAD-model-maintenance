@@ -1,0 +1,5 @@
+﻿Contrast,Estimate,95% CI
+AUC (B minus A),-0.005,-0.169 to +0.163
+O:E (B minus A),-0.246,-0.540 to +0.040
+Calibration slope (B minus A),-0.024,-1.164 to +0.788
+Calibration intercept (B minus A),-0.654,-1.382 to +0.087

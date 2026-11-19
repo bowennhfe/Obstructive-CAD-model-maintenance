@@ -1,0 +1,7 @@
+﻿metric,metric_label,target,target_basis,value_frozen,gap_frozen,value_best,pct_best,n_best,added_best,gap_best,value_final,gap_final,recovery_best_pct,recovery_final_pct
+AUC,Discrimination (AUC),0.832,internal cross-validated AUC of the development cohort,0.709,0.123,0.742,1.0,806,364,0.09,0.742,0.09,26.8,26.8
+slope,Calibration slope,1.0,nominal ideal value,0.837,0.163,0.953,0.2,514,73,0.047,1.222,0.222,71.3,-36.5
+intercept,Calibration intercept,0.0,nominal ideal value,-0.758,0.758,-0.457,1.0,806,364,0.457,-0.457,0.457,39.8,39.8
+O:E,Observed:expected ratio,1.0,nominal ideal value,0.698,0.302,0.789,1.0,806,364,0.211,0.789,0.211,30.2,30.2
+Brier,Brier score,0.0,nominal ideal value,0.227,0.227,0.201,1.0,806,364,0.201,0.201,0.201,11.3,11.3
+ICI,Integrated calibration index,0.0,nominal ideal value,0.159,0.159,0.105,1.0,806,364,0.105,0.105,0.105,34.2,34.2

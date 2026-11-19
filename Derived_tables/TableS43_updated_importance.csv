@@ -1,0 +1,20 @@
+﻿variable,label_en,mdi_updated,perm_auc_drop_updated,mdi_rank_updated,perm_rank_updated
+age,Age (years),0.13358,0.06268,1,1
+fib,Plasma fibrinogen (g/L),0.11905,0.02909,2,2
+ppi,Pulse pressure index,0.06278,-0.00568,3,17
+hdl,HDL-C (mmol/L),0.06244,0.00086,4,10
+urea,Urea (mmol/L),0.05971,0.00211,5,8
+ua,Uric acid (umol/L),0.05552,0.00134,6,9
+cr,Creatinine (umol/L),0.05422,-0.00145,7,13
+tg,Triglycerides (mmol/L),0.05249,0.01377,8,5
+tc,Total cholesterol (mmol/L),0.05208,-0.00164,9,14
+pp,Pulse pressure (mmHg),0.05107,-0.00594,10,18
+ldl,LDL-C (mmol/L),0.0483,0.00411,11,7
+map,Mean arterial pressure (mmHg),0.04431,-0.0019,12,15
+sbp,Systolic BP (mmHg),0.04249,-0.00715,13,19
+dm,Diabetes mellitus,0.03628,0.02323,14,4
+gender,Female sex,0.03454,0.02571,15,3
+dbp,Diastolic BP (mmHg),0.03364,-0.00014,16,12
+smoke,Smoking,0.02559,0.01265,17,6
+htn,Hypertension,0.0237,-0.00442,18,16
+dyslip,Dyslipidaemia,0.00821,0.00047,19,11

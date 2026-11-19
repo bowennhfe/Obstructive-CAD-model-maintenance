@@ -1,0 +1,43 @@
+﻿metric,metric_label,pct_temporal,n_contemporary_added,advantage_over_control,spearman_rho,p_value,n_steps
+AUC,Discrimination (AUC),0.0,0,0.0094,0.929,0.002519,7
+AUC,Discrimination (AUC),0.1,36,0.0267,0.929,0.002519,7
+AUC,Discrimination (AUC),0.2,73,0.0193,0.929,0.002519,7
+AUC,Discrimination (AUC),0.4,146,0.0317,0.929,0.002519,7
+AUC,Discrimination (AUC),0.6,218,0.0346,0.929,0.002519,7
+AUC,Discrimination (AUC),0.8,291,0.0431,0.929,0.002519,7
+AUC,Discrimination (AUC),1.0,364,0.042,0.929,0.002519,7
+slope,Calibration slope,0.0,0,0.024,-0.536,0.2152,7
+slope,Calibration slope,0.1,36,0.2033,-0.536,0.2152,7
+slope,Calibration slope,0.2,73,0.2223,-0.536,0.2152,7
+slope,Calibration slope,0.4,146,0.2043,-0.536,0.2152,7
+slope,Calibration slope,0.6,218,0.1063,-0.536,0.2152,7
+slope,Calibration slope,0.8,291,0.0216,-0.536,0.2152,7
+slope,Calibration slope,1.0,364,0.0076,-0.536,0.2152,7
+intercept,Calibration intercept,0.0,0,-0.0474,1.0,0.0,7
+intercept,Calibration intercept,0.1,36,0.0602,1.0,0.0,7
+intercept,Calibration intercept,0.2,73,0.1354,1.0,0.0,7
+intercept,Calibration intercept,0.4,146,0.2291,1.0,0.0,7
+intercept,Calibration intercept,0.6,218,0.2704,1.0,0.0,7
+intercept,Calibration intercept,0.8,291,0.3084,1.0,0.0,7
+intercept,Calibration intercept,1.0,364,0.3132,1.0,0.0,7
+O:E,Observed:expected ratio,0.0,0,-0.0137,1.0,0.0,7
+O:E,Observed:expected ratio,0.1,36,0.0129,1.0,0.0,7
+O:E,Observed:expected ratio,0.2,73,0.0314,1.0,0.0,7
+O:E,Observed:expected ratio,0.4,146,0.0608,1.0,0.0,7
+O:E,Observed:expected ratio,0.6,218,0.0771,1.0,0.0,7
+O:E,Observed:expected ratio,0.8,291,0.0889,1.0,0.0,7
+O:E,Observed:expected ratio,1.0,364,0.0926,1.0,0.0,7
+Brier,Brier score,0.0,0,0.0005,1.0,0.0,7
+Brier,Brier score,0.1,36,0.0127,1.0,0.0,7
+Brier,Brier score,0.2,73,0.0151,1.0,0.0,7
+Brier,Brier score,0.4,146,0.0228,1.0,0.0,7
+Brier,Brier score,0.6,218,0.0258,1.0,0.0,7
+Brier,Brier score,0.8,291,0.0297,1.0,0.0,7
+Brier,Brier score,1.0,364,0.0298,1.0,0.0,7
+ICI,Integrated calibration index,0.0,0,-0.0091,1.0,0.0,7
+ICI,Integrated calibration index,0.1,36,0.0104,1.0,0.0,7
+ICI,Integrated calibration index,0.2,73,0.0282,1.0,0.0,7
+ICI,Integrated calibration index,0.4,146,0.0382,1.0,0.0,7
+ICI,Integrated calibration index,0.6,218,0.0432,1.0,0.0,7
+ICI,Integrated calibration index,0.8,291,0.0519,1.0,0.0,7
+ICI,Integrated calibration index,1.0,364,0.0534,1.0,0.0,7

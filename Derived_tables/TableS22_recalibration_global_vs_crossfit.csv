@@ -1,0 +1,10 @@
+﻿Model,AUC raw,AUC after global intercept,AUC after global slope+intercept,ΔAUC global intercept,ΔAUC global slope+intercept,AUC after cross-fitted intercept,AUC after cross-fitted slope+intercept,ΔAUC cross-fitted intercept,ΔAUC cross-fitted slope+intercept,global slope (b1),fold slope min,fold slope max,O:E global slope+intercept,slope after global slope+intercept,intercept after global slope+intercept
+LR,0.737,0.737,0.737,0.0,0.0,0.7366,0.7277,-0.0004,-0.0093,0.672,0.566,0.934,1.0,1.0,-0.0
+LDA,0.7357,0.7357,0.7357,0.0,0.0,0.7364,0.731,0.0007,-0.0047,0.507,0.428,0.688,1.0,1.0,0.0
+SVM,0.7395,0.7395,0.7395,0.0,0.0,0.7391,0.7322,-0.0004,-0.0072,0.624,0.531,0.813,1.0,1.0,-0.0
+KNN,0.7054,0.7054,0.7054,0.0,0.0,0.7047,0.7023,-0.0008,-0.0031,0.775,0.645,0.849,1.0,1.0,-0.0
+DTC,0.6499,0.6499,0.6499,0.0,0.0,0.6492,0.6119,-0.0007,-0.038,0.073,0.056,0.109,1.0,1.0,-0.0
+MLP,0.6931,0.6931,0.6931,0.0,0.0,0.693,0.6734,-0.0001,-0.0198,0.177,0.148,0.295,1.0,1.0,-0.0
+RF,0.7187,0.7187,0.7187,0.0,0.0,0.7168,0.7059,-0.0019,-0.0128,0.884,0.746,1.167,1.0,1.0,0.0
+HGB,0.7038,0.7038,0.7038,0.0,0.0,0.7027,0.688,-0.0011,-0.0159,0.267,0.231,0.382,1.0,1.0,0.0
+"RF (frozen, pipeline 02)",0.7187,0.7187,0.7187,0.0,0.0,0.7168,0.7059,-0.0019,-0.0128,0.884,0.746,1.167,1.0,1.0,0.0

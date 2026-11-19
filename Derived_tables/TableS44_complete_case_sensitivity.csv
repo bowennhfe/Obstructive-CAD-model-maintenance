@@ -1,0 +1,3 @@
+﻿Cohort,"n (full, median imputation)",n (complete case),removed,AUC full sample (same protocol),AUC complete case,difference,SD across folds
+Derivation,442,434,8,0.829,0.8262,-0.0028,0.0522
+Geographical,177,172,5,0.7105,0.6975,-0.0129,0.1068

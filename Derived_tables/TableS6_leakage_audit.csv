@@ -1,0 +1,25 @@
+﻿block,check,value,verdict
+A,exact duplicate rows: original vs temporal,0,PASS
+A,shared ID: original vs temporal,0,PASS
+A,internal duplicates: original,0,PASS
+A,internal duplicates: temporal,0,PASS
+A,exact duplicate rows: original vs geo,0,PASS
+A,shared ID: original vs geo,0,PASS
+A,internal duplicates: original,0,PASS
+A,internal duplicates: geo,0,PASS
+A,exact duplicate rows: temporal vs geo,0,PASS
+A,shared ID: temporal vs geo,0,PASS
+A,internal duplicates: temporal,0,PASS
+A,internal duplicates: geo,0,PASS
+B,max |imputer stat - derivation median|,0.0,PASS
+B,max |imputer stat - pooled(dev+geo) median|,10.05,INFO
+B,pipeline steps of the primary model (RF needs no scaling),imp + clf,PASS
+B,geo fibrinogen missing filled with derivation median,2.695,PASS
+C,derivation predictions invariant to geo label permutation,True,PASS
+C,geo AUC with true labels,0.7187,INFO
+C,geo AUC with shuffled labels (should be ~0.5),0.5014,PASS
+F,threshold used for external evaluation,0.5312,PASS
+F,threshold recomputed from derivation OOF (should match),0.5312,PASS
+F,threshold that WOULD be obtained from the external labels (must NOT be used),0.466,INFO
+G,times the geographical cohort was evaluated during script 03,140,INFO
+G,geographical cohort used for any fitting / tuning / variable selection,No,PASS

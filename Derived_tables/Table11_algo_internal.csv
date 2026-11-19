@@ -1,0 +1,9 @@
+﻿Model,Full name,AUC (50 folds) mean,AUC (50 folds) SD,AUC (pooled OOF),Sensitivity,Specificity,Brier,Calibration slope,Calibration intercept,ICI,O:E,Youden threshold,Best hyperparameters
+LR,Logistic regression (elastic net),0.847,0.045,0.843,0.726,0.786,0.161,1.2,0.004,0.041,1.001,0.488,"{'C': 0.1, 'l1_ratio': 0.5}"
+LDA,Linear discriminant analysis,0.846,0.043,0.843,0.726,0.791,0.163,0.881,0.112,0.048,1.036,0.479,{}
+SVM,Support vector machine (RBF),0.842,0.046,0.837,0.721,0.774,0.164,1.017,0.001,0.05,1.0,0.492,"{'C': 1.0, 'gamma': 0.01}"
+KNN,k-nearest neighbours,0.805,0.05,0.803,0.659,0.799,0.186,1.224,0.39,0.095,1.193,0.438,"{'n_neighbors': 21, 'weights': 'uniform'}"
+DTC,Decision tree,0.751,0.063,0.753,0.716,0.816,0.183,0.62,0.042,0.078,1.015,0.453,"{'max_depth': 5, 'min_samples_leaf': 8}"
+MLP,Neural network (MLP),0.785,0.05,0.782,0.784,0.675,0.19,0.514,0.054,0.096,1.015,0.38,"{'alpha': 0.0001, 'hidden_layer_sizes': (10,)}"
+RF,Random forest,0.832,0.055,0.829,0.702,0.833,0.171,1.435,0.038,0.085,1.016,0.531,"{'max_depth': 10, 'min_samples_leaf': 1, 'n_estimators': 500}"
+HGB,Gradient boosting,0.856,0.049,0.854,0.712,0.88,0.155,0.625,0.145,0.089,1.035,0.601,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}"

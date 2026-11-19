@@ -1,0 +1,9 @@
+﻿Form,Accounting,n per evaluation,AUC,O:E,Calibration slope,Calibration intercept,Brier,ICI,Mean |O:E - 1|,Mean |intercept|
+None (frozen),single evaluation of the whole cohort,177,0.719,0.706,0.884,-0.731,0.222,0.148,0.2936,0.7308
+None (frozen),per fold (n = 35),35,0.721 (0.562 to 0.864),0.706 (0.629 to 0.808),0.918 (0.262 to 1.948),-0.732 (-1.015 to -0.447),0.221 (0.172 to 0.275),0.219 (0.151 to 0.305),0.2914,0.7293
+Intercept only,per fold (n = 35),35,0.721 (0.562 to 0.864),0.999 (0.833 to 1.221),0.918 (0.262 to 1.948),-0.002 (-0.356 to 0.352),0.201 (0.157 to 0.250),0.182 (0.109 to 0.261),0.0809,0.1479
+Intercept only,fold-pooled (n = 177),177,0.717 (0.713 to 0.720),0.999 (0.998 to 1.000),0.873 (0.852 to 0.883),-0.001 (-0.004 to 0.000),0.201 (0.201 to 0.202),0.070 (0.053 to 0.093),0.0006,0.001
+Slope and intercept,per fold (n = 35),35,0.721 (0.562 to 0.864),0.999 (0.841 to 1.195),1.041 (0.243 to 2.612),-0.002 (-0.330 to 0.306),0.201 (0.166 to 0.253),0.187 (0.108 to 0.267),0.0747,0.1336
+Slope and intercept,fold-pooled (n = 177),177,0.711 (0.696 to 0.717),0.999 (0.989 to 1.006),0.934 (0.799 to 0.983),-0.002 (-0.019 to 0.010),0.203 (0.201 to 0.208),0.063 (0.045 to 0.095),0.0011,0.002
+"Intercept only, full-cohort fit (apparent; not independently validated)",applied intercept -0.731 (95% CI -1.079 to -0.404),177,0.719,1.0,0.884,0.0,0.201,0.07,0.0,0.0
+"Slope and intercept, full-cohort fit (apparent; not independently validated)","applied slope 0.884 (0.558 to 1.325), intercept -0.704 (-1.055 to -0.390)",177,0.719,1.0,1.0,0.0,0.2,0.067,0.0,0.0

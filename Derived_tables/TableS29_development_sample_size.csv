@@ -1,0 +1,8 @@
+﻿Criterion,Required n,Required events,Note,Met by 442 (208 events)
+Precise estimation of overall risk (half-width 0.05),383,181,,yes
+Shrinkage S >= 0.9 (using OOF R2_CS_adj),470,222,Q=19, R2_CS_adj=0.299,no
+Small optimism in R2_CS (<=5% relative),1058,498,S_VH = 1/1.05,no
+Shrinkage S >= 0.9 (anticipated Nagelkerke R2 = 0.20),1044,492,R2_CS_adj=0.150,no
+Shrinkage S >= 0.9 (anticipated Nagelkerke R2 = 0.30),662,312,R2_CS_adj=0.225,no
+Shrinkage S >= 0.9 (anticipated Nagelkerke R2 = 0.40),470,221,R2_CS_adj=0.300,no
+Shrinkage S >= 0.9 (anticipated Nagelkerke R2 = 0.50),354,167,R2_CS_adj=0.375,yes

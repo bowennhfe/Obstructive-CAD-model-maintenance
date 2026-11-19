@@ -1,0 +1,8 @@
+pair,separability,ext_AUC,ext_OE
+Centre 1 -> Centre 2,0.912,0.728,0.95
+Centre 2 -> Centre 1,0.912,0.78,1.3
+Centre 1 -> geo,0.733,0.705,0.68
+Centre 2 -> geo,0.916,0.652,0.89
+Both centres -> geo,0.739,0.691,0.7
+temporal -> geo (from main pipeline),0.746,0.742,0.79
+original442 -> geo (main pipeline),0.739,0.719,0.7

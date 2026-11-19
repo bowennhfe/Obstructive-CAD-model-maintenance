@@ -1,0 +1,10 @@
+﻿Quantity,Estimate,Bootstrap SE,95% CI,Riley 2021 target,Achieved?
+Events / non-events,63 / 114,,,>=100 events and >=100 non-events (rule of thumb),no (events)
+O:E ratio,0.706,,0.579-0.835,SE(ln O:E) <= 0.10,yes
+ln(O:E),-0.348,0.094,-0.547--0.181,SE <= 0.10,yes
+Calibration slope,0.884,0.195,0.559-1.320,SE <= 0.10,no
+AUC,0.719,0.039,0.643-0.792,95% CI half-width <= 0.05 (SE <= 0.0255),no
+Calibration intercept in the large,-0.731,0.173,-1.071--0.403,no published target; reported for orientation,n/a
+Events required to reach the target: O:E (SE of ln O:E = 0.10),56,,,,already met (63 events)
+Events required to reach the target: Calibration slope (SE = 0.10),241,,,,needs 3.8x the present cohort
+Events required to reach the target: AUC (target SE = 0.0255),148,,,,needs 2.3x the present cohort
