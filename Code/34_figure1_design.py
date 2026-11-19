@@ -58,9 +58,9 @@ WARN = dict(fc="#fdeaea", ec="#a24a4a")
 EN = dict(
     head="Consecutive inpatients meeting the same eligibility criteria at four hospitals, October 2017 to July 2026\n"
          "(inpatients with suspected coronary artery disease referred for CCTA)",
-    dev="Derivation cohort\nCentres 1 and 2, Oct 2017 - Dec 2022\n"
+    dev="Derivation cohort\nHospitals 1 and 2, Oct 2017 - Dec 2022\n"
         "n = 442, 208 obstructive (47.1%)",
-    dev_exc="Excluded from 579 screened\nat these two centres\n"
+    dev_exc="Excluded from 579 screened\nat these two hospitals\n"
             "- 45 unsatisfactory or incomplete CCTA\n"
             "- 38 incomplete clinical records\n"
             "- 54 previous revascularisation",
@@ -93,10 +93,10 @@ EN = dict(
 
 ZH = dict(
     head="四家医院 2017 年 10 月至 2026 年 7 月筛查的符合条件患者\n（疑诊冠心病、已转诊接受 CCTA 的住院患者）",
-    dev="推导队列\n中心 1 与中心 2\n2017.10–2022.12\nn = 442，阻塞性 208 例\n（47.1%）",
-    dev_exc="上述两中心筛查 579 例，排除：\n- CCTA 图像不合格或记录不全 45 例\n"
+    dev="推导队列\n医院 1 与医院 2\n2017.10–2022.12\nn = 442，阻塞性 208 例\n（47.1%）",
+    dev_exc="上述两家医院筛查 579 例，排除：\n- CCTA 图像不合格或记录不全 45 例\n"
             "- 临床资料不完整 38 例\n- 既往血运重建 54 例",
-    temp="当代队列\n中心 1\n2023.01–2026.07\nn = 364，阻塞性 172 例\n（47.3%）",
+    temp="当代队列\n医院 1\n2023.01–2026.07\nn = 364，阻塞性 172 例\n（47.3%）",
     geo="地理外部队列\n另两家医院\n2024–2026\nn = 177，阻塞性 63 例\n（35.6%）",
     geoa="医院 A\nn = 56\n阻塞性 24 例\n（42.9%）",
     geob="医院 B\nn = 121\n阻塞性 39 例\n（32.2%）",
