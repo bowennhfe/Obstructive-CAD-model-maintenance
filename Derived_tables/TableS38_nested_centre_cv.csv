@@ -1,5 +1,5 @@
-analysis,auc,sd,n_outer_repeats,note
-"internal 50-fold CV (non-nested, reference)",0.831,0.0637,5,hyperparameters fixed at the pre-specified grid optimum; the original reported figure
+﻿analysis,auc,sd,n_outer_repeats,note
+"internal 50-fold CV (non-nested, reference)",0.831,0.0637,5,hyperparameters fixed at the pre-defined grid optimum; the original reported figure
 "nested CV (outer 5-fold, inner 5-fold, grid searched inside each outer training fold)",0.8324,0.0061,3,mean over repeats of the pooled out-of-fold AUC; inner-fold mean sd = 0.0265
 "centre-aware CV (leave-one-centre-out, inner grid search)",0.7666,0.0323,2,folds are centres; the 5 records with no centre assignment enter training only
 "leave-one-centre-out, fixed hyperparameters (Table S10)",0.7662,0.0326,2,same centres as above but without inner tuning
