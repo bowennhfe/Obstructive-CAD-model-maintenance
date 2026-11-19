@@ -1,4 +1,4 @@
-Family,Full name,Searched grid (10-fold CV on the development cohort),Selected hyperparameters,Internal CV AUC
+Family,Full name,Searched grid (10-fold CV on the development cohort),Selected settings,Internal CV AUC
 LR,Logistic regression (elastic net),"C = 0.01, 0.1, 1.0; l1_ratio = 0.2, 0.5, 1.0",C = 0.1; l1_ratio = 0.5,0.847
 LDA,Linear discriminant analysis,"none (solver = lsqr, shrinkage = auto; no tuning)",none (fixed setting),0.846
 SVM,Support vector machine (RBF),"C = 1.0, 10.0; gamma = scale, 0.01",C = 1.0; gamma = 0.01,0.842
