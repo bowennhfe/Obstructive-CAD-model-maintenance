@@ -180,7 +180,7 @@ def main():
     pcols = [c for c in ("p_mannwhitney", "p_paired", "p_mixed")
              if c in t8.columns]
     if pcols:
-        C.section("端点检验迁移：Table 8 -> 主表报区间，Table S39 保留重复实验内检验")
+        C.section("端点检验迁移：Table 8 -> 主表报区间，Table S13 保留重复实验内检验")
         C.save_table(t8[["metric"] + pcols].copy(), "TableS39_ladder_endpoint_tests")
         boot_l0 = detail["ladder0_vs_ladder100"]["diff"]
         rows8 = []

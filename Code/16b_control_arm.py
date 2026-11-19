@@ -66,8 +66,8 @@ def main():
     rows = []
 
     # 对照臂在地理队列上的 AUC 直接取自积累阶梯自身的对照臂
-    #（Outputs/s03_growth_detail.csv），以保证 Table S24 与 Table 6、
-    # Table S4、Table S7 报告的是同一个对照臂。
+    #（Outputs/s03_growth_detail.csv），以保证 Table S15 与 Table 6、
+    # Table S1、Table S14 报告的是同一个对照臂。
     _g3 = pd.read_csv(os.path.join(C.OUT_DIR, "s03_growth_detail.csv"))
     _g3c = _g3[_g3["arm"] == "control"]
     ladder_geo = {(round(float(r["pct_temporal"]), 2), int(r["repeat"])): float(r["geo_auc"])

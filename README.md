@@ -11,9 +11,9 @@ manuscript and in the supplementary material. No patient-level data are included
 (see *Data required* and *Data availability* below); the aggregated tables from
 which the manuscript's numerical statements are taken are in `Derived_tables/`.
 `Derived_tables/TABLE_INDEX.csv` maps every table file to its display number in the
-manuscript's supplementary material (the supplement reproduces the 39 numbered tables that
-the text cites, plus the companion Table S13b; the remaining process/provenance
-tables stay in this repository only).
+manuscript's supplementary material: 15 supplementary tables (S1 to S15), whose 40 panels
+reproduce every numbered block that the text cites, with the panel letter in the third
+column. The remaining process/provenance tables stay in this repository only.
 
 ---
 

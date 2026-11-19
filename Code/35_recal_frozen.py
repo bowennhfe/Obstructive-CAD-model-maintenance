@@ -3,7 +3,7 @@
 35 —— 冻结模型的交叉拟合再校准（第二轮复核硬问题 1）
 =============================================================================
 问题
-    旧 Figure 3 / Table S5 的 "before" 曲线取的是阶梯分析 temporal 臂 pct=1.00
+    旧 Figure 3 / Table S12 的 "before" 曲线取的是阶梯分析 temporal 臂 pct=1.00
     的预测（即**全量更新后**的模型），不是冻结模型；"after" 又是 fold-pooled
     口径，而正文 Table 3 的主口径是 per-fold。两者都对不上 Section 3.4。
 
@@ -277,7 +277,7 @@ def main():
         C.log(f"  {name:6s} DiD {obs_d:+.4f} ({lo:+.4f} to {hi:+.4f})")
     C.save_table(pd.DataFrame(rows_d), "TableS55_ladder_did")
 
-    # ---------------- Table S5 ----------------
+    # ---------------- Table S12 ----------------
     def _row(form, accounting, n_eval, mdict, lo=None, hi=None,
              dep_oe=None, dep_ic=None):
         r = {"Form": form, "Accounting": accounting, "n per evaluation": n_eval}
@@ -348,7 +348,7 @@ def main():
     C.save_table(t5, "TableS5_recalibration_in_geo")
     print(t5.to_string(index=False))
 
-    # ---------------- TableS28（与 Table S5 同源，保持旧表结构） ----------------
+    # ---------------- TableS28（与 Table S12 同源，保持旧表结构） ----------------
     s28_rows = []
     for form, lab in (("intercept", "intercept-only"),
                       ("both", "slope+intercept")):

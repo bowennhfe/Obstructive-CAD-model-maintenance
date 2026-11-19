@@ -268,7 +268,7 @@ def fig_recalibration_in_geo(g, yg, path_out, pct=1.00, n_folds=5):
     """【已停用】pct 默认 1.00 = 全量更新后的模型，不是冻结模型。
 
     冻结模型的交叉拟合再校准见 35_recal_frozen.py。保留本函数仅为历史对照，
-    切勿再用于正文 Figure 3 / Table S5。
+    切勿再用于正文 Figure 3 / Table S12。
     """
     d = g[(g["arm"] == "temporal") & (g["pct_temporal"] == pct)]
     P = np.concatenate([np.array(x) for x in d["p_geo"]])
@@ -411,7 +411,7 @@ def main():
         fig_growth_discrimination(g, "FigS5_growth_discrimination")
         fig_growth_calibration(g, "FigS6_growth_calibration")
         fig_calibration_improvement(g, yg, "FigS7_calibration_improvement")
-        # Figure 3 与 Table S5 已改由 35_recal_frozen.py 产出：那里用的是**冻结模型**
+        # Figure 3 与 Table S12 已改由 35_recal_frozen.py 产出：那里用的是**冻结模型**
         # 的预测，而本脚本的 temporal 臂在 pct=1.00 处给的是全量更新后的模型。
         # 此前本处默认 pct=1.00 而图题仍写"冻结模型"，是上一轮复核认定的硬错误。
         C.section(f"仅重绘图完成，总耗时 {C.timer(t0)}")

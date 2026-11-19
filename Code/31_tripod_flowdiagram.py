@@ -152,7 +152,7 @@ def _en():
     _box(ax, 0.045, 0.146, 0.91, 0.076,
          "Reporting follows TRIPOD+AI (development and external validation, incorporating the "
          "clustered-data\nitems of TRIPOD-Cluster). Risk of bias was assessed at the level of the four "
-         "PROBAST+AI domains\nrather than item by item (Table S34). The design was specified before "
+         "PROBAST+AI domains\nrather than item by item (Table S7). The design was specified before "
          "analysis and is not registered;\nno time-stamped analysis plan and no public repository "
          "entry exist. Full checklist provided as a supplementary file.",
          **hdr, fs=6.6)

@@ -140,7 +140,7 @@ def main():
     a_all_o = roc_auc_score(yg, p_orig)
     a_all_u = roc_auc_score(yg, p_upd)
     d_all = a_all_u - a_all_o
-    # 全队列的患者层面配对 Bootstrap 标准误（与 Table S37 同口径）
+    # 全队列的患者层面配对 Bootstrap 标准误（与 Table S2 同口径）
     rng0 = np.random.default_rng(SEED)
     _ds = []
     for _ in range(2000):
@@ -165,11 +165,11 @@ def main():
         _chk_n = int((geo["male"] == 1).sum())
         _chk_e = int(yg[np.asarray(geo["male"] == 1)].sum())
         assert _chk_n == _n_male and _chk_e == _e_male, (
-            "sex subgroup definition does not match Table S11: "
+            "sex subgroup definition does not match Table S8: "
             "male n=%d ev=%d vs S11 n=%d ev=%d" % (_chk_n, _chk_e, _n_male, _e_male))
-        C.log(f"  [check] sex subgroups match Table S11 (male n={_chk_n}, ev={_chk_e})")
+        C.log(f"  [check] sex subgroups match Table S8 (male n={_chk_n}, ev={_chk_e})")
     else:
-        C.log("  [check] Table S11 not found or ambiguous; sex check skipped")
+        C.log("  [check] Table S8 not found or ambiguous; sex check skipped")
     rng = np.random.default_rng(SEED)
     n_all = len(yg)
     for name, fn in SUBS:
@@ -181,7 +181,7 @@ def main():
         a1 = roc_auc_score(yg[mask], p_orig[mask])
         a2 = roc_auc_score(yg[mask], p_upd[mask])
         d = a2 - a1
-        # 患者层面配对 Bootstrap（与 Table S37 同口径）：每次重采样对该亚层内
+        # 患者层面配对 Bootstrap（与 Table S2 同口径）：每次重采样对该亚层内
         # 的患者有放回抽样，两模型在同一次抽样上求 AUC，取差值。
         ym, p1m, p2m = yg[mask], p_orig[mask], p_upd[mask]
         ds, inter_boot = [], []

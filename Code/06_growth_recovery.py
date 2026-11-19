@@ -121,7 +121,7 @@ def main():
 
     auc_dev = float(str(t2[t2["Model"] == "RF"]["AUC (50 folds)"].iloc[0]).split()[0])
 
-    # 对照臂的内部交叉验证 AUC 与专用对照臂分析（16b → Table S24）同源：
+    # 对照臂的内部交叉验证 AUC 与专用对照臂分析（16b → Table S15）同源：
     # 同一个量不应在两张表里出现两个值。
     _s16_path = os.path.join(C.OUT_DIR, "s16_control_arm.csv")
     if not os.path.exists(_s16_path):

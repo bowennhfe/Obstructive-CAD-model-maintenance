@@ -81,47 +81,47 @@ def main():
             "Not fitted (hyperparameters and coefficients fixed)",
             "Geographical cohort (n=177)",
             "Evaluated per repeated experiment and averaged over 10 repeats",
-            _nb(d8, thr, "net_benefit_frozen"), "Table S8")
+            _nb(d8, thr, "net_benefit_frozen"), "Table S3")
         add(thr, "Frozen model + intercept-only recalibration",
             "One constant fitted on the target-centre outcomes (cross-fitted, out-of-bag)",
             "Geographical cohort (n=177)",
             "Evaluated per repeated experiment and averaged over 10 repeats",
-            _nb(d8, thr, "net_benefit_recal_intercept"), "Table S8")
+            _nb(d8, thr, "net_benefit_recal_intercept"), "Table S3")
         add(thr, "Fully updated model",
             "Re-tuned by 5-fold grid search within the enlarged derivation pool (100% step)",
             "Geographical cohort (n=177)",
             "Evaluated per repeated experiment and averaged over 10 repeats",
-            _nb(d8, thr, "net_benefit_updated"), "Table S8")
+            _nb(d8, thr, "net_benefit_updated"), "Table S3")
         add(thr, "Row-count-matched control arm",
             "Re-tuned by 5-fold grid search within the enlarged derivation pool (control data)",
             "Geographical cohort (n=177)",
             "Evaluated per repeated experiment and averaged over 10 repeats",
-            _nb(d8, thr, "net_benefit_control"), "Table S8")
+            _nb(d8, thr, "net_benefit_control"), "Table S3")
         add(thr, "Treat-all strategy",
             "Not fitted", "Geographical cohort (n=177)",
             "Evaluated per repeated experiment and averaged over 10 repeats",
-            _nb(d8, thr, "net_benefit_treat_all"), "Table S8")
+            _nb(d8, thr, "net_benefit_treat_all"), "Table S3")
         add(thr, "Treat-none strategy",
             "Not fitted", "Geographical cohort (n=177)",
             "Evaluated per repeated experiment and averaged over 10 repeats",
-            _nb(d8, thr, "net_benefit_treat_none"), "Table S8")
+            _nb(d8, thr, "net_benefit_treat_none"), "Table S3")
 
         # --- 表 S37：合并预测向量成对比较口径（= §3.7 主口径）---
         add(thr, "Ladder 0% step",
             "Re-tuned by 5-fold grid search within the original derivation pool",
             "Geographical cohort, single pooled prediction vector (n=177)",
             "Paired patient-level bootstrap on pooled vectors (2000 resamples)",
-            _nb37(d37, "ladder0_vs_ladder100", thr, "before"), "Table S37")
+            _nb37(d37, "ladder0_vs_ladder100", thr, "before"), "Table S2")
         add(thr, "Fully updated model (100% step)",
             "Re-tuned by 5-fold grid search within the enlarged derivation pool",
             "Geographical cohort, single pooled prediction vector (n=177)",
             "Paired patient-level bootstrap on pooled vectors (2000 resamples)",
-            _nb37(d37, "ladder0_vs_ladder100", thr, "after"), "Table S37")
+            _nb37(d37, "ladder0_vs_ladder100", thr, "after"), "Table S2")
         add(thr, "Frozen model",
             "Not fitted (hyperparameters and coefficients fixed)",
             "Geographical cohort, single pooled prediction vector (n=177)",
             "Paired patient-level bootstrap on pooled vectors (2000 resamples)",
-            _nb37(d37, "frozen_vs_ladder0", thr, "before"), "Table S37")
+            _nb37(d37, "frozen_vs_ladder0", thr, "before"), "Table S2")
 
     out = pd.DataFrame(rows)
     C.save_table(out, "TableS41_net_benefit_provenance")

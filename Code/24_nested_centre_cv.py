@@ -192,7 +192,7 @@ def main():
     C.log(f"固定超参数 LOCO pooled AUC = {loco_auc:.4f} "
           f"(Centre1 {loco_a[0]:.3f} / Centre2 {loco_a[1]:.3f})")
     out_rows.append({
-        "analysis": "leave-one-centre-out, fixed hyperparameters (Table S14)",
+        "analysis": "leave-one-centre-out, fixed hyperparameters (Table S10)",
         "auc": round(loco_auc, 4),
         "sd": round(float(np.std(loco_a)), 4),
         "n_outer_repeats": 2,
