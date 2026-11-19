@@ -142,12 +142,22 @@ def main():
     # 去掉冗余列
     piv = piv.drop(columns=[c for c in piv.columns
                             if c == "control_naive_geo_auc"])
-    ref = (alld[alld["arm"] == "control_naive"].set_index("pct")
-           .reindex(piv["pct"]))
+    # ★ R10：n_derive 取**时间臂**（= 阶梯实际并入后的训练池行数，514/734 等），
+    #   与正文表 4 的 "Unique patients in the arm" 逐档一致。此前取 control_naive
+    #   的名义样本量（442+round(pct*364)，即 515/733），与表 4 相差 1 例。
+    ref = t3.set_index("pct").reindex(piv["pct"])
     piv.insert(1, "n_derive",
                ref["n_derive"].round(0).astype(int).values)
+    # ★ R11：n_unique_patients 必须取**对照臂自身**的 distinct 计数，不能跟
+    #   n_derive 走。对照臂是**有放回**重采样（见 strat_bootstrap_ids），
+    #   同一患者会在行里重复出现；把 806 行当成 806 位患者是错的——100% 档
+    #   只有 370 位（442 位被抽 806 次后的期望去重数）。这里取 10 次重复的
+    #   去重数均值四舍五入，与表 4 表注 "806 rows but 370 distinct patients"
+    #   一致。此前该列被 R10 一并写成 n_derive，导致表 4 出现 806 例"患者"。
+    _ctrl = agg[agg["arm"] == "control_naive"].set_index("pct")
     piv.insert(2, "n_unique_patients",
-               ref["n_unique_patients"].round(0).astype(int).values)
+               _ctrl.reindex(piv["pct"])["n_unique_patients"]
+               .round(0).astype(int).values)
     piv["cv_auc_inflation_naive_minus_grouped"] = (
         piv["control_naive_cv_auc"] - piv["control_grouped_cv_auc"]).round(4)
     C.save_table(piv, "TableS24_control_arm_grouped")
