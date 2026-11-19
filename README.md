@@ -15,6 +15,12 @@ manuscript's supplementary material: 15 supplementary tables (S1 to S15), whose 
 reproduce every numbered block that the text cites, with the panel letter in the third
 column. The remaining process/provenance tables stay in this repository only.
 
+One supplementary panel is assembled rather than written by a single script: `TableS2b_algo_grids.csv`
+(Table S2, panel E) is compiled from the `ALGOS` dictionary of `Code/14_algo_comparison.py`
+(searched grids and selected settings) and from `Table11_algo_internal.csv` (internal
+cross-validated AUC); `Code/14_algo_comparison.py` is its source, and editing a grid there
+requires regenerating the panel.
+
 ---
 
 ## 1. What the code does
