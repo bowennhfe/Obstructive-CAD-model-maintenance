@@ -64,7 +64,7 @@ EN = dict(
             "- 45 unsatisfactory or incomplete CCTA\n"
             "- 38 incomplete clinical records\n"
             "- 54 previous revascularisation",
-    temp="Contemporary cohort\nCentre 1, Jan 2023 - Jul 2026\n"
+    temp="Contemporary cohort\nHospital 1, Jan 2023 - Jul 2026\n"
          "n = 364, 172 obstructive (47.3%)",
     geo="Geographical external cohort\nTwo further hospitals, 2024 - 2026\n"
         "n = 177, 63 obstructive (35.6%)",
@@ -72,7 +72,7 @@ EN = dict(
     geob="Hospital B\nn = 121\n39 obstructive\n(32.2%)",
     seq_head="Analysis sequence",
     note="No randomisation. Allocation was fixed by the clinical question: models were developed on the derivation\n"
-         "cohort, enlarged by contemporary patients in pre-specified increments; the geographical cohort was\n"
+         "cohort, enlarged by contemporary patients in pre-defined increments; the geographical cohort was\n"
          "predicted only and never used for fitting, tuning, variable selection or threshold definition.",
     step1="1  Development\n- 19 candidate\n  variables\n- 8 algorithm families\n"
           "- repeated stratified\n  10-fold CV\n  (5 repeats, 50 folds)\n"

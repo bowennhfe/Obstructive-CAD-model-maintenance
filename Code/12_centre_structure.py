@@ -62,7 +62,7 @@ o['centre'] = np.where(fr.isin(se),'E',np.where(fr.isin(sf),'Y','UNK'))
 E, Y = o[o.centre=='E'], o[o.centre=='Y']
 
 # ---------------------------------------------------------------- 数据准备
-SETS = {'Centre 1': E, 'Centre 2': Y, 'Temporal': t, 'Geographical': g}
+SETS = {'Hospital 1': E, 'Hospital 2': Y, 'Temporal': t, 'Geographical': g}
 names = list(SETS)
 
 SEP = pd.DataFrame(np.eye(len(names)), index=names, columns=names)
@@ -83,15 +83,15 @@ for nm, d in SETS.items():
     x = d['fib']; yv = d['label']; mk = x.notna()
     a = roc_auc_score(yv[mk], x[mk]); FIB_AUC[nm] = max(a, 1-a)
 
-TRANSPORT = [('Centre 1 → Centre 2', 0.728, 'cross-centre'),
-             ('Centre 2 → Centre 1', 0.780, 'cross-centre'),
-             ('Centre 1 → geo', 0.705, 'to geo'),
-             ('Centre 2 → geo', 0.652, 'to geo'),
-             ('Both centres → geo', 0.691, 'to geo')]
+TRANSPORT = [('Hospital 1 → Hospital 2', 0.728, 'cross-centre'),
+             ('Hospital 2 → Hospital 1', 0.780, 'cross-centre'),
+             ('Hospital 1 → geo', 0.705, 'to geo'),
+             ('Hospital 2 → geo', 0.652, 'to geo'),
+             ('Both hospitals → geo', 0.691, 'to geo')]
 REF_INTERNAL = 0.832
 
 exp = C.read_csv_out('s11_diversity_experiment_raw')
-CFG = ['Centre 1 only', 'Centre 2 only', 'Both centres (mixed)']
+CFG = ['Hospital 1 only', 'Hospital 2 only', 'Both hospitals (mixed)']
 CFG_C = ['#1f77b4', '#ff7f0e', '#9467bd']
 
 # ---------------------------------------------------------------- 绘图
@@ -121,15 +121,15 @@ axA.set_ylabel('')
 # 时间队列取自中心 1 的后期时段 → 用中心 1 的红色系（浅色）标记，与「另一中心」区分
 axB = fig.add_subplot(gs[0, 1])
 ks = list(FIB_AUC)
-_COL_B = {'Centre 1': '#d62728', 'Centre 2': '#7f7f7f',
+_COL_B = {'Hospital 1': '#d62728', 'Hospital 2': '#7f7f7f',
           'Temporal': '#f4a3a0', 'Geographical': '#2ca02c'}
 cols = [_COL_B.get(k, '#7f7f7f') for k in ks]
 bars = axB.bar(range(len(ks)), [FIB_AUC[k] for k in ks], color=cols, width=0.62,
                edgecolor='black', linewidth=0.5)
 C.ref_line(axB, y=0.5, color='#666666', lw=0.9, ls='--')
 axB.set_xticks(range(len(ks)))
-_xt = ['Centre 1\n(2017-2022)', 'Centre 2\n(2017-2022)',
-       'Centre 1\n(2023-2026)', 'Other hospital']
+_xt = ['Hospital 1\n(2017-2022)', 'Hospital 2\n(2017-2022)',
+       'Hospital 1\n(2023-2026)', 'Other hospital']
 axB.set_xticklabels(_xt, fontsize=7.2, ha='center')
 axB.set_ylim(0.45, 0.86)
 axB.set_ylabel('Univariable AUC of fibrinogen', fontsize=8.5)
@@ -175,7 +175,7 @@ _hi = max(sub['AUC'].max(), 0.74)
 _pad = 0.055 * (_hi - _lo)
 axD.set_ylim(_lo - _pad, _hi + 2.9 * _pad)
 axD.set_xticks(range(3))
-axD.set_xticklabels(['Centre 1\nonly', 'Centre 2\nonly', 'Both centres\n(mixed)'],
+axD.set_xticklabels(['Hospital 1\nonly', 'Hospital 2\nonly', 'Both hospitals\n(mixed)'],
                     fontsize=8)
 axD.set_ylabel('AUC on geographical cohort', fontsize=8.5)
 axD.set_title(f'Matched sample size\n(n={n_show} x {len(sub)//3} repeats)',

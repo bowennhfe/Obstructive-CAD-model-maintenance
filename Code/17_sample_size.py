@@ -85,7 +85,7 @@ def sec_dev(Xd, yd):
     # 判据 2：目标收缩因子 S_VH ≥ 0.9（过拟合 ≤10%）
     add("Shrinkage S >= 0.9 (using OOF R2_CS_adj)",
         n_shrinkage(Q, r2_cs_oof, 0.9),
-        f"Q={Q}，R2_CS_adj={r2_cs_oof:.3f}")
+        f"Q={Q}, R2_CS_adj={r2_cs_oof:.3f}")
     # 判据 3：R²_CS 的表观值与调整值之差不超过 5%（相对）
     add("Small optimism in R2_CS (<=5% relative)",
         n_shrinkage(Q, r2_cs_oof, 1 / 1.05), "S_VH = 1/1.05")
