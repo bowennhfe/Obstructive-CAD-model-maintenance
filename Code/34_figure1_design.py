@@ -9,8 +9,10 @@
           本研究并没有做可加的损失分解，只是分别评价校准与判别；
       (3) 写 "Size-matched control arm"，但对照臂只匹配了行数（806 行、370 名
           不同患者），不是有效样本量。
-    旧 Figure S14（流程图）另有两处口径问题：写 "three participating centres"
-    （实为四家医院），同样保留 "size-matched" 与 "two components" 字样。
+    另有一个独立的流程图脚本（原 31_tripod_flowdiagram.py），同样写 "three
+    participating centres" 并保留 "size-matched" 与 "two components" 字样，
+    且与定稿的 Table S15 / 公开仓库不符，已从发布包移除；Figure 1 现在是稿件中
+    唯一的队列装配流程图。
 
 本图
     上：病例来源与筛选（含推导队列的真实排除数、外部队列的两家医院）
